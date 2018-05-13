@@ -1,4 +1,5 @@
-import Component from '../common/Component.js'
+import Component from '../../common/Component.js'
+import './Box.css'
 
 export default class Box extends Component {
   render () {
@@ -8,8 +9,10 @@ export default class Box extends Component {
     }, this.state)
 
     this.element.innerHTML = `
-      <h2>${title}</h2>
-      <p>${body}</p>
+      <div class="Box">
+        <h2>${title}</h2>
+        <p>${body}</p>
+      </div>
     `
   }
 }

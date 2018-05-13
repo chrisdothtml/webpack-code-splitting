@@ -1,4 +1,4 @@
-import Component from '../common/Component.js'
+import Component from '../../common/Component.js'
 
 export default class Form extends Component {
   render () {

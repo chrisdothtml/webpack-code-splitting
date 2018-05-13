@@ -1,4 +1,5 @@
 import { parseQuery } from './common/utils.js'
+import './index.css'
 
 const QUERIES = parseQuery(window.location.search)
 const COMPONENT_INSTANCES = {}
@@ -30,7 +31,7 @@ function initComponents () {
   return Promise.all(
     componentList.map(async (name) => {
       if (QUERIES[`show${name}`] && !COMPONENT_INSTANCES[name]) {
-        const Component = await import(`./components/${name}.js`)
+        const Component = await import(`./components/${name}/${name}.js`)
 
         COMPONENT_INSTANCES[name] = new Component.default(
           document.getElementById(name.toLowerCase()),
