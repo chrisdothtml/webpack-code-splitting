@@ -25,7 +25,7 @@ const COMPONENT_CONFIGS = {
 }
 
 function initComponents () {
-  const componentList = ['Box', 'Form']
+  const componentList = Object.keys(COMPONENT_CONFIGS)
 
   return Promise.all(
     componentList.map(async (name) => {
