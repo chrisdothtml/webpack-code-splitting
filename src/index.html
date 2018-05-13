@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code-splitting</title>
+  </head>
+  <body>
+    <h1>Code-splitting</h1>
+    <p>There is a Box component and a Form component. Neither of them are in the base bundle.<br /><br />Use the url query to control showing the components. Passing <a href="?showBox">?showBox</a> will cause the script to dynamically import the Box component and mount it, and likewise with <a href="?showForm">?showForm</a> to show the form and <a href="?showBox&showForm">?showBox&showForm</a> to show both</p>
+    <div id="box"></div>
+    <div id="form"></div>
+
+    <!-- webpack will inject script tags -->
+  </body>
+</html>
