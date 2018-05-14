@@ -2,8 +2,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "del dist && webpack-cli",
-    "build-dev": "del dist && webpack-cli --mode development"
+    "build": "del dist && webpack-cli"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
